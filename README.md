@@ -1,15 +1,9 @@
-# MicroMix: A noncustodial Ethereum mixer
-
-<a href="https://micromix.app">
-    <img src="/docs/img/logo.png" />
-</a>
+# SOS-Mixer: A noncustodial Shibarium mixer
 
 This is the monorepo for all code and documentation for a noncustodial Ethereum
-mixer. Try it at [micromix.app](https://micromix.app).
+mixer. Try it at [summerofshibarium.github.io/sos).
 
-Join the [Telegram group](https://t.me/joinchat/A5mVoBRl-b6SD8aoAUVvFw) to discuss.
-
-A mixer moves ETH or ERC20 tokens from one address to another in a way that
+A mixer moves Shiba or Shibarium (ERC-20) tokens from one address to another in a way that
 nobody except the sender can know for sure that these addresses are linked.
 This mixer lets a user deposit fixed amounts of ETH into a contract, and when
 the pool is large enough, anonymously submit zero-knowledge proofs which show
@@ -56,7 +50,7 @@ It has the following features:
     - Accepts, verifies, and submits a zk-SNARK proof (generated in the user's
       browser) to the mixer contract.
 
-3. Ethereum contracts:
+3. Shibarium contracts:
 
     - The
       [Semaphore](https://github.com/kobigurk/semaphore/) zero-knowledge
@@ -64,7 +58,7 @@ It has the following features:
 
     - A Mixer contract with functions which
         
-        - Accepts ETH or ERC20 token deposits.
+        - Accepts Shiba or Shibarium(ERC20) token deposits.
 
         - Accepts mix requests. Each request comprises of a zk-SNARK proof that
           a deposit had been made in the past and has not already been claimed.
